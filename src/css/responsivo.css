@@ -1,0 +1,74 @@
+@media(max-width:1280px ){
+
+    .cabecalho{
+        padding: 30px;
+
+
+    }
+    .home{
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0px;
+        gap: 30px;
+
+    }
+
+    .home .informacoes{
+
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .projetos .container-projetos{
+        padding: 0 30px;
+    
+
+    }
+
+    
+
+}
+
+@media(max-width:425px) {
+    .home .informacoes h1 {
+        font-size: 30px;
+    }
+
+    .home .informacoes p {
+        font-size: 16px;
+    }
+
+    .home .container-foto img {
+        max-width: 100%; /* Ajuste para ocupar a largura total do container */
+        height: auto; /* Para manter a proporção da imagem */
+        border-radius: 50%; /* Para manter a forma circular */
+        margin: 0 auto; /* Centralizar a imagem horizontalmente */
+    }
+
+    .container-projetos {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajustar automaticamente o número de colunas */
+    }
+
+    .projetos {
+        padding: 30px 15px; /* Reduzir o espaçamento interno */
+    }
+
+    .projetos .projeto {
+        max-width: calc(100% - 20px); /* Ajustar a largura do projeto para ocupar o máximo da largura disponível */
+        margin-bottom: 20px; /* Adicionar espaçamento entre os projetos */
+    }
+
+    .projetos .projeto h3 {
+        padding: 10px 15px; /* Reduzir o espaçamento interno do título do projeto */
+    }
+
+    .informacoes-projeto {
+        padding: 10px 15px; /* Reduzir o espaçamento interno das informações do projeto */
+    }
+
+    .btn-mostrar-projetos {
+        width: 100%; /* Fazer o botão ocupar toda a largura disponível */
+    }
+}
